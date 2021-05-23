@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yanone+Kaffeesatz&display=swap');
+*{
+    box-sizing: border-box;
+
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 2px;
+}
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+}
+.contenedor{
+    margin:auto;
+    width: 95%;
+}
+/*Estilos del header*/
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display:flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 7px;
+    color:white
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    height: 40px;
+    font-size: 30px;
+    background:red;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*Estilos del menu*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: red;
+    text-decoration: none;
+    color:white;
+}
+.menu__link:hover{
+    background: white;
+    color:red;
+}
+.mostrar{
+    left:0;
+}
+.select{
+    background: white;
+    color:red;
+}
+/*Estilos del banner*/
+.banner{
+    margin-top:-60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+.banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.banner__txt{
+    display: none;
+}
+/*Estilo de footer*/
+footer{
+    background: rgba(4, 4, 78, 0.986);
+    color:white;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display:flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color:white;
+    border-bottom: 3px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #ccc;
+}
+.content-foo p a{
+    color: #ccc;
+    text-decoration: none;
+}
+.titulo-final{
+    
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+/*Estilos responsive*/
+@media(min-width:480px){
+    .logo{
+        font-size:40px
+    }
+    .banner__titulo{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 50px;
+        margin:10px 0;
+        letter-spacing: 2px;
+    }
+    .banner__txt{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        display: block;
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin:7px 0;
+    }
+}
+@media(min-width:768px){
+    .banner__titulo{
+        font-size: 40px;
+    }
+}
+@media(min-width:1024px)
+{
+    .contenedor{
+        width: 1350px;
+    }
+    .section__titulo{
+        font-size: 50px;
+        margin:30px 0 
+    }
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+    }
+    .icon-menu{
+        display:none;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+    }
+    .select{
+        color:white;
+        background: red;
+    }
+    .banner__titulo{
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+    .banner__txt{
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+}
+@media(min-width:1280px)
+{
+    .contenedor{
+        width: 1450px;
+    }
+    .banner .contenedor{
+        top:40%;
+    }
+}
