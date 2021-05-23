@@ -8,9 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="estilos3.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>COVID-19</title>
   </head>
   <body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
       <header class="header">
           <div class="contenedor">
               <h1 class="logo">PÁGINA INFORMATIVA COVID-19</h1>
@@ -25,37 +29,121 @@
               </nav>
           </div>
       </header>
-    <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <div class="banner">
       <img src="src/banner.jpg" alt="" class="banner__img">
       <div class="contenedor">
-        <p2 class="banner__titulo">CONOZCA TODA LA INFORMACIÓN DEL COVID-19</p2>
-        <p class="banner__txt">RECUERDA QUE NO SOLO TÚ TE CONTAGIAS, TIENES A TU FAMILIA DETRÁS</p>
+        <p class="banner__titulo">PREVENCIÓN Y MEDIDAS ANTE EL COVID-19</p>
+        <p class="banner__txt">SEPA TODO LO NECESARIO PARA CUIDARSE DE ESTE VIRUS</p>
       </div>
     </div>
-    
+    <section class="contenedor sobre-prevencion">
+        <h2 class="titulo">¿CÓMO PREVENIR EL CONTAGIO DE COVID-19?<br><br>CONSEJOS</h2>
+    </section>
+    <div class="Portafolio3">
+        <div class="item">
+            <img src="src/manos.jpg" alt="" class="item-img">
+            <div class="item-text">
+                <h3>LIMPIEZA CONSTANTE</h3>
+                <ul>
+                    <li>Lávate las manos hasta el antebrazo con agua y jabón por un mínimo de 20 segundos.</li>
+                    <li>En caso de no haber agua y jabón, utilizar gel antibacterial.</li>
+                    <li>Cuando llegue de la calle, colocar la ropa en un repositorio e ir directamente a bañarse.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <img  src="src/distanciamiento.jpg" alt="" class="item-img">
+            <div class="item-text">
+                <h3>PRUDENCIA</h3>
+                <ul>
+                    <li>Al toser o estornudar cubrirse la boca con un pañuelo desechable o antebrazo;
+                        nunca con las manos.
+                    </li>
+                    <li>No tocarse los ojos,nariz o boca si no se lavó las manos.</li>
+                    <li>Mantener 2 metros de distancia con las demás personas.</li>
+                    <li>Evitar las aglomeraciones de personas y espacios mal ventilados.</li>
+                    <li>Limpiar y desinfectar los objetos con alcohol (No usar en exceso, puede desencadenar intoxicación)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <img src="src/traje.jpg" alt="" class="item-img">
+            <div class="item-text">
+                <h3>IMPLEMENTOS BÁSICOS</h3>
+                <ul>
+                    <li>Alcohol antibacterial</li>
+                    <li>Mascarilla</li>
+                    <li>Protector facial</li>
+                    <li>Lente para aislamiento médico</li>
+                    <li>Alcohol Medicinal de 70°</li>
+                    <li>Trajes contra partículas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section class="contenedor sobre-prevencion">
+        <h2 class="titulo">TIPOS DE MASCARILLAS</h2>
+    </section>
+    <div class="Portafolio3">
+        <div class="item">
+            <img src="src/mascarilla-quirúrgica.jpg" alt="" class="item-img">
+            <div class="item-text">
+                <h3>MASCARILLAS QUIRÚRJICAS</h3>
+                <ul>
+                    <li>Son mascarillas de uso médico y cuentan con triple capa, las de dentro y fuera son de poliéster y la capa central
+                        es de polipropilen. Se utilizan con el objetivo de proteger a la persona de posibles agentes infecciosos presentes
+                        en la cavidad nasal o bucal del usuario de la mascarilla.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <img  src="src/filtrantes.jpg" alt="" class="item-img">
+            <div class="item-text">
+                <h3>MASCARILLAS FILTRANTES</h3>
+                <ul>
+                    <li>Contienen un filtro de micropartículas gracias al cual pueden proteger al usuario de las mascarilla frente a inhalación
+                        de contaminantes ambientales -en partículas o aerosoles-. No protegen frente a gases o vapores.<br>
+                        Se clasifican en 3: FFP1 (fuga hacia el interior máximo del 22%), FPP2 (fuga hacia el interior máximo del 8%), FPP3
+                        (fuga hacia el interior máximo del 2%).
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <img src="src/mascarilla-higiénica.jpg" alt="" class="item-img">
+            <div class="item-text">
+                <h3>MASCARILLAS HIGIÉNICAS O DE BARRERA</h3>
+                <ul>
+                    <li>Están destinadas a personas sin síntomas que no sean susceptibles de utilizar mascarillas quirúrgicas ni filtrantes, 
+                        en base a las recomendaciones establecidas por el Ministerio de Sanidad  y en aquellas situaciones en las que el 
+                        desabastecimiento de mascarillas de uso médico las puedan hacer recomendables.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <footer>
-      <div class="contenedor-footer">
-          <div class="content-foo">
-              <h4>Correo Electrónico</h4>
-              <p><a href="mailto:geresa@saludarequipa.gob.pe">geresa@saludarequipa.gob.pe</a></p>
-          </div>
-          <div class="content-foo">
-              <h4>Número de Celular</h4>
-              <p>(054) 235155</p>
-          </div>
-          <div class="content-foo">
-              <h4>Ubicación Arequipa</h4>
-              <p>Av. De la Salud S/N - Arequipa - Arequipa.</p>
-          </div>
-          <div class="content-foo">
-              <h4>Página Web Oficial</h4>
-              <p><a href="https://www.gob.pe/coronavirus#recomendaciones">https://www.gob.pe</a></p>
-          </div>
-      </div>
-      <p class="titulo-final">&copy; Alonso Andre Cordova Malaga - Todos los derechos reservados</p>
-    </footer>
-    <script src="menu.js"></script>
-  </body>
-</html>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Correo Electrónico</h4>
+                <p><a href="mailto:geresa@saludarequipa.gob.pe">geresa@saludarequipa.gob.pe</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Número de Celular</h4>
+                <p>(054) 235155</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación Arequipa</h4>
+                <p>Av. De la Salud S/N - Arequipa - Arequipa.</p>
+            </div>
+            <div class="content-foo">
+                <h4>Página Web Oficial</h4>
+                <p><a href="https://www.gob.pe/coronavirus#recomendaciones">https://www.gob.pe</a></p>
+            </div>
+        </div>
+        <p class="titulo-final">&copy; Alonso Andre Cordova Malaga - Todos los derechos reservados</p>
+      </footer>
+      <script src="prevencion.js"></script>

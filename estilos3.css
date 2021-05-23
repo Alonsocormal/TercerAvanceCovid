@@ -23,6 +23,32 @@ h1,h2,h3,h4,h5,h6{
     margin:auto;
     width: 95%;
 }
+.titulo{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+/*loader*/
+#preloader{
+    position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: #000;
+     z-index: 1000;
+ }
+ 
+ #loader{
+     width: 100px;
+     height: 100px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     margin: -50px 0 0 -50px;
+     background: url(../src/loader.gif)no-repeat center 0;
+ }
 /*Estilos del header*/
 .header{
     height: 60px;
@@ -98,6 +124,59 @@ h1,h2,h3,h4,h5,h6{
 .banner__txt{
     display: none;
 }
+/*galeria*/
+.Portafolio3{
+    width: 85%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom:3e;
+    display:grid; /*El elemento se comporta como un elemento de bloque y establece su contenido de acuerdo con el modelo de cuadrícula.*/
+    grid-template-columns: repeat(3,1fr); /*La frunidad (una "fracción") se puede utilizar al definir cuadrículas como 
+    cualquier otra longitud de CSS */
+    grid-gap: 30px; /*que especifica los canales entre las filas y las columnas de la cuadrícula.*/
+}
+.item{
+    background-color: #fff;
+    cursor:pointer;
+    box-shadow: 0 0 5px 0 rgba (0,0,0,1);
+    transition:all 300ms;
+}
+.iterm::after{
+    content:"";
+    background-color: rgba(179,229,252,.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transform:scale(0);
+    transition: all 300ms;
+    opacity: 0;
+}
+.item:hover::after{
+    opacity: 1;
+    transform: scale(1); /*despues del efecto de agrandar*/
+}
+.item:hover{
+    transform: scale(1.05); /*hace el efecto de agrandar*/
+}
+.item-text h3{
+    text-align: center;
+}
+.item-text ul{
+    text-align: justify;
+    padding: 5px;
+}
+.item-text{
+    padding:3em;
+    line-height: 1.5em;
+}
+.item-img{
+    max-width: 95%;
+    display: block;
+}
 /*Estilo de footer*/
 footer{
     background: rgba(4, 4, 78, 0.986);
@@ -155,10 +234,44 @@ footer{
         letter-spacing: 2px;
         margin:7px 0;
     }
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+    
+    .agregar-imagen{
+        width: 60%;
+    }
+    .cont-expert{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Portafolio3{
+        grid-template-columns: repeat(2,1fr); 
+    }
 }
 @media(min-width:768px){
     .banner__titulo{
         font-size: 40px;
+    }
+    .img-galeria{
+        width: 31%;
+    }
+    
+    .agregar-imagen{
+        width: 60%;
+    }
+    .cont-expert{
+        width: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .Portafolio3{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 @media(min-width:1024px)
