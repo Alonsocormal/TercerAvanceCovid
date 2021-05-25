@@ -200,7 +200,8 @@ footer{
     width: 31%;
     display: block;
     margin-bottom: 30px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6); /*añade efectos de sombra alrededor del marco de un elemento.
+    desplazamientos en X e Y, los radios de desenfoque y dispersión, y el color relativos al elemento.*/
     cursor: pointer;
 }
 
@@ -214,8 +215,8 @@ footer{
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.534);
-    transform: translate(100%);
-    transition: transform .2s ease-in-out;
+    transform: translate(100%); /*recolocar un elemento en el eje horizontal y/o vertical*/
+    transition: transform .2s ease-in-out; /*especifica un efecto de transición con un inicio y un final lentos*/
 }
 
 .agregar-imagen{
@@ -226,7 +227,7 @@ footer{
 }
 
 .showImage{
-    transform: scale(1);
+    transform: scale(1); /*Especifica una operación de escalado 2D descrita por [sx, sy].*/
 }
 
 .show{

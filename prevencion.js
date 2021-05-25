@@ -6,5 +6,5 @@ btnMenu.addEventListener('click',function(){
 })
 window.onload=function(){
     /**/
-    $('#preloader').fadeOut();
+    $('#preloader').fadeOut(); // El signo $ es un identificador de variables y funciones. fadeout oculta un elemento variando su opacidad
 }

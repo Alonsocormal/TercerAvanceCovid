@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yanone+Kaffeesatz&display=swap');
 *{
-    box-sizing: border-box;
+    box-sizing: border-box; /*calcular el ancho y alto total de un elemento.
+    cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento.*/
 
 }
 img{
-    display: block;
-    max-width: 100%;
+    display: block; /*	El elemento genera un cuadro de elemento de bloque.*/
+    max-width: 100%; /*ancho maximo*/
 }
 body{
-    margin:0;
-    font-family: 'Open Sans', sans-serif;
+    margin:0; /*margen para los cuatro lados*/
+    font-family: 'Open Sans', sans-serif; /*tipo de letra*/
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /*Espaciado de letra*/
 }
 .section__titulo{
-    text-align: center;
-    font-size: 40px;
+    text-align: center; /*alineacion del texto*/
+    font-size: 40px; /*tamaño de letra*/
 }
 .contenedor{
     margin:auto;
-    width: 95%;
+    width: 95%; /*ancho*/
 }
 /*Estilos del header*/
 .header{
-    height: 60px;
+    height: 60px; /*alto*/
 }
 .header .contenedor{
-    display:flex;
-    justify-content: space-between;
+    display:flex; /*elemento flexible para alterar sus dimensiones y llenar el espacio disponible.*/
+    justify-content: space-between; /*justificar contenido del espacio entre ellos*/
 }
 .logo, .icon-menu{
     margin: 7px;
@@ -43,29 +44,29 @@ h1,h2,h3,h4,h5,h6{
     font-size: 30px;
     background:red;
     text-align: center;
-    line-height: 45px;
-    border-radius: 5px;
-    margin-left: auto;
+    line-height: 45px; 
+    border-radius: 5px; /*que tenga un borde un poco circular*/
+    margin-left: auto; /*margen de la izquierda*/
     cursor: pointer;
 }
 /*Estilos del menu*/
 .nav{
-    position: absolute;
+    position: absolute; /*removido del flujo normal del documento, no se crea espacio alguno para el elemento en el esquema de la página.*/
     top: 60px;
     left: -100%;
     width: 100%;
-    transition: all 0.4s;
+    transition: all 0.4s; /*transición a todo que dure 0.4s*/
 }
 .menu{
-    list-style: none;
-    padding: 0;
+    list-style: none; /*que no tenga estilo*/
+    padding: 0; /*espacio entre el contenido del elemento y su borde*/
     margin: 0;
 }
 .menu__link{
     display: block;
     padding: 15px;
     background: red;
-    text-decoration: none;
+    text-decoration: none; /*el texto no tenga decoración*/
     color:white;
 }
 .menu__link:hover{
@@ -82,21 +83,21 @@ h1,h2,h3,h4,h5,h6{
 /*Estilos del banner*/
 .banner{
     margin-top:-60px;
-    position: relative;
-    z-index: -1000;
+    position: relative; /*posicionamiento en base al documento, desplazado en relacion asimismo*/
+    z-index: -1000; /*indica el orden de un elemento posicionado y sus descendientes.*/
     margin-bottom: 20px;
 }
 .banner .contenedor{
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); /*mover en x, y*/
     width: 100%;
     color: white;
     text-align: center;
 }
 .banner__txt{
-    display: none;
+    display: none; /*que no se muestre*/
 }
 /*Estilos de Info*/
 .info_columna{
@@ -134,7 +135,7 @@ footer{
     color:white;
     padding: 60px 0 30px 0;
     margin: auto;
-    overflow: hidden;
+    overflow: hidden; /*especifica contenido recortado y no muestra barras de posicion*/
 }
 .contenedor-footer{
     display:flex;
@@ -164,7 +165,7 @@ footer{
     
     text-align: center;
     font-size: 24px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 0; /*arriba-derecha-abajo-izquierda*/
     color: #9e9797;
 }
 
@@ -199,7 +200,7 @@ footer{
         margin: 5px 0;
     }
     .riesgos{
-        flex-wrap: wrap;
+        flex-wrap: wrap; /*Los elementos flex son colocados en varias líneas. */
         margin-top: 0;
     }
     .section__titulo{
@@ -258,7 +259,7 @@ footer{
         margin:30px 0 
     }
     .nav{
-        position: static;
+        position: static; /*Es el valor que toma un elemento por defecto para posicionarse.*/
         width: auto;
     }
     .menu{
